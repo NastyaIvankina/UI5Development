@@ -1,0 +1,11 @@
+specVersion: '2.5'
+metadata:
+  name: UI5Development
+type: application
+framework:
+  name: SAPUI5
+  version: "1.93.0"
+  libraries:
+    - name: sap.m
+    - name: sap.ui.core
+    - name: sap.ui.table
