@@ -1,1 +1,45 @@
+# npm
+*.log
+node_modules/
+npm-debug*
 
+# elastic injection file
+/webapp/libs/elastic-apm-rum.umd.min.js
+
+# sapui5 dependencies
+resources/
+test-resources/
+
+# WebIDE
+.user.project.json
+sap-ui-cachebuster-info.json
+extended_runnable_file.html
+.*/extended_runnable_file.html
+mock_preview_sapui5.html
+.*/mock_preview_sapui5.html
+fioriHtmlRunner.html
+.*/fioriHtmlRunner.html
+visual_ext_index.html
+/webapp/visual_ext_index.html
+UIAdaptation_index.html
+changes_preview.js
+/.user.project.json
+.project.json
+.che/
+
+# vs code
+.vscode
+
+# sonarqube
+.scannerwork
+.coverage
+
+# ignore build artifact
+dist/
+
+# macos
+.DS_Store
+
+# compile css files
+/webapp/css/**/*.css
+© 2021 GitHub, Inc.
