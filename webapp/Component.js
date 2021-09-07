@@ -1,25 +1,16 @@
 sap.ui.define([
-    "sap/ui/core/UIComponent"
-], function(UIComponent) {
+    "sap/ui/core/UIComponent",
+    "sap/ui/model/json/JSONModel"
+], function(UIComponent, JSONModel) {
     'use strict';
-    return UIComponent.extend("", {
+    return UIComponent.extend("ui5development.Component", {
         metadata : {
-            "interfaces": ["sap.ui.core.IAsyncContentCreation"],
-            "rootView": {
-               "viewName": "ui5development.App",
-               "type": "XML",
-               /*"async": true, // implicitly set via the sap.ui.core.IAsyncContentCreation interface*/
-               "id": "app"
-            }
-        },
+            interfaces: ["sap.ui.core.IAsyncContentCreation"],
+            manifest: "json"
+      },
 
         init: function() {
             UIComponent.prototype.init.apply(this, arguments);
-            let resourceModel = new ResourceModel({
-                bundleName: "ui5development/i18n/i18n"
-            });
-
-            this.getView().setModel(resourceModel, "i18n");
 
             let oData = {
                 receipent: {
@@ -28,7 +19,7 @@ sap.ui.define([
             };
 
             let jsonModel = new JSONModel(oData);
-            this.getView().setModel(jsonModel);
+            this.setModel(jsonModel);
         }
     })
 });
