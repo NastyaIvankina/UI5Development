@@ -7,11 +7,21 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Quick Start Tutorial</title>
+        <title>SAPUI5 Walkthrough</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <script id="sap-ui-bootstrap"
+		    src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+		    data-sap-ui-compatVersion="edge"
+		    data-sap-ui-async="true"
+		    data-sap-ui-onInit="module:sap/ui/core/ComponentSupport"
+		    data-sap-ui-resourceroots='{
+			"ui5development": "./"
+		}'>
+	</script>
     </head>
-    <body>
+    <body class="sapUiBody" id="content">
+        <div data-sap-ui-component data-name="ui5development" data-id="container" data-settings='{"id" : "walkthrough"}'></div>
     </body>
 </html>
