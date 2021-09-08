@@ -3,15 +3,15 @@
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc">
     <Shell>
-        <App>
+        <App class="myAppDemoWT">
             <pages>
                 <Page id="appPage" title="{i18n>homePageTitle}">
                     <content>
                         <Panel id="homePanel" headerText="{i18n>homePanelHeaderText}" class="sapUiResponsiveMargin" width="auto">
                             <content>
-                                <Button text="{i18n>pressHelloButtonText}" press=".onSayHelloPress" class="sapUiSmallMarginEnd"/>
+                                <Button text="{i18n>pressHelloButtonText}" press=".onSayHelloPress" class="myCustomButton"/>
                                 <Input id="inputField" value="{/receipent/name}" valueLiveUpdate="true" width="60%"/>
-                                <Text text="Hello {/receipent/name}!" class="sapUiSmallMargin"/>
+                                <FormattedText htmlText="Hello {/receipent/name}!" class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
                             </content>
                         </Panel>
                     </content>
