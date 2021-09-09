@@ -6,14 +6,13 @@
         <App class="myAppDemoWT">
             <pages>
                 <Page id="appPage" title="{i18n>homePageTitle}">
+                    <headerContent>
+						<Button
+							icon="sap-icon://hello-world"
+							press=".onOpenDialog"/>
+					</headerContent>
                     <content>
-                        <Panel id="homePanel" headerText="{i18n>homePanelHeaderText}" class="sapUiResponsiveMargin" width="auto">
-                            <content>
-                                <Button text="{i18n>pressHelloButtonText}" press=".onSayHelloPress" class="myCustomButton"/>
-                                <Input id="inputField" value="{/receipent/name}" valueLiveUpdate="true" width="60%"/>
-                                <FormattedText htmlText="Hello {/receipent/name}!" class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
-                            </content>
-                        </Panel>
+                        <mvc:XMLView viewName="ui5development.view.HelloPanel"/>
                     </content>
                 </Page>
             </pages>
