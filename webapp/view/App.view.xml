@@ -13,6 +13,7 @@
 					</headerContent>
                     <content>
                         <mvc:XMLView viewName="ui5development.view.HelloPanel"/>
+                        <mvc:XMLView viewName="ui5development.view.InvoiceList"/>
                     </content>
                 </Page>
             </pages>

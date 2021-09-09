@@ -1,0 +1,10 @@
+<mvc:View
+    controllerName="ui5development.controller.InvoiceList"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+    <List items="{invoices>/Invoices}" headerText="{i18n>invoicesHeader}">
+        <items>
+            <ObjectListItem title="{invoices>Quantity} x {invoices>ProductName}"/>
+        </items>
+    </List>
+</mvc:View>
